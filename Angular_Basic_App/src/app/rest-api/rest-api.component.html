@@ -1,0 +1,14 @@
+<form>
+  HTTP URL's
+  <div class="row">
+    <div class="col-sm-5">
+      <input type="text" class="form-control"  [formControl]='httpUrl'>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)='getReq()'>GET</button>
+  </div>
+</form>
+
+<div class="form-group" class="col-sm-5">
+    <label for="result">Result :</label>
+    <textarea class="form-control" id="result" rows="5">{{result}}</textarea>
+  </div>

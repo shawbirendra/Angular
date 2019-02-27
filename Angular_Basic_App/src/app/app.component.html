@@ -1,0 +1,46 @@
+<!--The content below is only a placeholder and can be replaced.-->
+  <div class="container">
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="btn-group">
+    <div class="btn btn-dark" routerLink='/home'>Home</div>
+      <button type="button"  id="pricing_header" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        Pricing
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" routerLink='/iPhonePriceSheet' id="iphone_pricesheet">iPhone Price Sheet</a>
+        <a class="dropdown-item" routerLink='/iPadPriceSheet' id="ipad_pricesheet">iPad Price Sheet</a>
+      </div>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false" id="1">
+        Stores
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Store List</a>
+        <a class="dropdown-item" href="#">Store Groups</a>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-dark" aria-haspopup="true" aria-expanded="false" routerLink='/products'>
+      Products
+    </button>
+    <button type="button" class="btn btn-dark" aria-haspopup="true" aria-expanded="false" routerLink='/reports'>
+      Reports
+    </button>
+    <button type="button" class="btn btn-dark" aria-haspopup="true" aria-expanded="false" routerLink='/support'>
+      Support
+    </button>
+    <button type="button" class="btn btn-dark" aria-haspopup="true" aria-expanded="false" routerLink='/rest-api'>
+      REST-API
+    </button>
+    <button type="button" class="btn btn-dark" aria-haspopup="true" aria-expanded="false" routerLink='/form-test'>
+      FORMS
+    </button>
+
+
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,29 @@
+<nav class="navbar navbar-light bg-light justify-content-between" style="margin-top: 20px;margin-bottom: 20px">
+    <a class="navbar-brand">Price Sheet</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search Price Sheet" aria-label="Search">
+    </form>
+  </nav>
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Schedule</th>
+        <th scope="col">Created</th>
+        <th scope="col">Modified</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pricesheet of pricesheets">
+            <td> {{pricesheet.name}}</td>
+            <td> <span style="color: lightgray">Start:</span>{{pricesheet.date}}<br>
+              <span style="color: lightgray">End:</span>{{pricesheet.date}}
+            </td>
+            <td> {{pricesheet.createdBy}}<p style="color: lightgray">{{pricesheet.date}}</p></td>
+            <td> {{pricesheet.modifiedBy}}<p style="color: lightgray">{{pricesheet.date}}</p></td>
+            <td> <a routerLink="{{pricesheet.status}}">{{pricesheet.status}}</a></td>
+          </tr>
+    </tbody>
+  </table>
